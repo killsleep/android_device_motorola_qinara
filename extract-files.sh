@@ -2,6 +2,6 @@
 
 
 export VENDOR=motorola
-export DEVICE=mb886
+export DEVICE=qinara
 
 ../msm8960-common/extract-files.sh $@
