@@ -1,16 +1,16 @@
 # Inherit device configuration for Motorola Atrix HD.
 $(call inherit-product, device/motorola/qinara/full_qinara.mk)
 
-# Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/gsm.mk)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := mk_qinara
+PRODUCT_NAME := cm_qinara
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := qinara
 PRODUCT_MODEL := MB886
