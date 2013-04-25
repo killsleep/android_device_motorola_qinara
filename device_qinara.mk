@@ -15,14 +15,7 @@
 #
 # This is the product configuration for a full qinara
 #
-TARGET_USES_MOTOROLA_COMMON_LIBLIGHT:=true
-TARGET_USES_MOTOROLA_COMMON_IDC:=true
-TARGET_USES_MOTOROLA_COMMON_KEYCHARS:=true
-TARGET_USES_MOTOROLA_COMMON_KEYLAYOUT:=true
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-$(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 LOCAL_PATH := device/motorola/qinara
 
@@ -75,4 +68,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+$(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 $(call inherit-product-if-exists, vendor/motorola/qinara/qinara-vendor.mk)
+
