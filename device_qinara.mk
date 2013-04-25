@@ -25,6 +25,9 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+# Atrix HD Doesn't have NFC
+NO_NFC_MOTO_MSM8960 := true
+
 # qinara specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
