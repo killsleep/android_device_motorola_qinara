@@ -1,3 +1,4 @@
+# inherit from common file frome msm8960-common
 -include device/motorola/msm8960-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
