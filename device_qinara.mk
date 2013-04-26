@@ -25,11 +25,6 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-# Use common resources
-TARGET_USES_MOTOROLA_MSM8960_COMMON_IDC := true
-TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYCHARS := true
-TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYLAYOUT := true
-
 # qinara specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -74,6 +69,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, device/motorola/msm8960-common/idc/idc.mk)
+$(call inherit-product, device/motorola/msm8960-common/keychars/keychars.mk)
+$(call inherit-product, device/motorola/msm8960-common/keylayout/keylayout.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 $(call inherit-product-if-exists, vendor/motorola/qinara/qinara-vendor.mk)
