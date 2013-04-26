@@ -28,6 +28,11 @@ endif
 # Atrix HD Doesn't have NFC
 NO_NFC_MOTO_MSM8960 := true
 
+# Use common resources
+TARGET_USES_MOTOROLA_MSM8960_COMMON_IDC := true
+TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYCHARS := true
+TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYLAYOUT := true
+
 # qinara specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

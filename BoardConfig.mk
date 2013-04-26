@@ -6,10 +6,8 @@
 
 LOCAL_PATH := device/motorola/qinara
 
-TARGET_USES_MOTOROLA_COMMON_LIBLIGHT:=true
-TARGET_USES_MOTOROLA_COMMON_IDC:=true
-TARGET_USES_MOTOROLA_COMMON_KEYCHARS:=true
-TARGET_USES_MOTOROLA_COMMON_KEYLAYOUT:=true
+# Use common resources
+TARGET_USES_MOTOROLA_MSM8960_COMMON_LIBLIGHT := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=/dev/null androidboot.hardware=qcom user_debug=31 loglevel=1 msm_rtb.filter=0x3F kgsl.mmutype=gpummu zcache
