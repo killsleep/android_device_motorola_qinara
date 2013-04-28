@@ -1,3 +1,10 @@
+# end build properties
+#
+# system.prop for Motorola MSM8960 devices - generic to all
+# Add device-specific or carrier-specific changes to PRODUCT_PROPERTY_OVERRIDES.
+#
+
+rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
@@ -9,3 +16,4 @@ persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ro.telephony.default_network=9
+ril.subscription.types=NV,RUIM
