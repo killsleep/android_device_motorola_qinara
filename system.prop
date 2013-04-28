@@ -1,4 +1,3 @@
-# end build properties
 #
 # system.prop for Motorola MSM8960 devices - generic to all
 # Add device-specific or carrier-specific changes to PRODUCT_PROPERTY_OVERRIDES.
