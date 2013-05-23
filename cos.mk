@@ -1,5 +1,5 @@
 # Inherit device configuration for Motorola Atrix HD.
-$(call inherit-product, device/motorola/qinara/full_qinara.mk)
+$(call inherit-product, device/pantech/ef44s/full_qinara.mk)
 
 # Inherit some common COS stuff.
 $(call inherit-product, vendor/cos/config/common_full_phone.mk)
@@ -10,13 +10,13 @@ $(call inherit-product, vendor/cos/config/gsm.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cos_qinara
-PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := qinara
-PRODUCT_MODEL := MB886
-PRODUCT_MANUFACTURER := motorola
-PRODUCT_RELEASE_NAME := motorola Atrix HD
-PRODUCT_SFX := cn
+PRODUCT_NAME := cos_ef44s
+PRODUCT_BRAND := pantech
+PRODUCT_DEVICE := ef44s
+PRODUCT_MODEL := IM-A840S
+PRODUCT_MANUFACTURER := pantech
+PRODUCT_RELEASE_NAME := pantech Vega S5
+PRODUCT_SFX := en
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

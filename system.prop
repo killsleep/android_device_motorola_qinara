@@ -1,6 +1,5 @@
 #
-# system.prop for Motorola MSM8960 devices - generic to all
-# Add device-specific or carrier-specific changes to PRODUCT_PROPERTY_OVERRIDES.
+# system.prop for ef44s
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so

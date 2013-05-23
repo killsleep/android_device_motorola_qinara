@@ -13,11 +13,10 @@
 # limitations under the License.
 
 #
-# This is the product configuration for a full qinara
+# This is the product configuration for a full ef44s
 #
 
-
-LOCAL_PATH := device/motorola/qinara
+LOCAL_PATH := device/pantech/ef44s
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -25,17 +24,17 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-# qinara specific overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+# ef44s specific overlay
+DEVICE_PACKAGE_OVERLAYS += device/pantech/ef44s/overlay
 
-PRODUCT_LOCALES := zh_CN
+PRODUCT_LOCALES := ru_RU
 PRODUCT_LOCALES += xhdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=300
 
 # graphics, xda thread 2243812, suggested by Codex01
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -69,10 +68,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, device/motorola/msm8960-common/idc/idc.mk)
-$(call inherit-product, device/motorola/msm8960-common/keychars/keychars.mk)
-$(call inherit-product, device/motorola/msm8960-common/keylayout/keylayout.mk)
+$(call inherit-product, device/pantech/msm8960-common/idc/idc.mk)
+$(call inherit-product, device/pantech/msm8960-common/keychars/keychars.mk)
+$(call inherit-product, device/pantech/msm8960-common/keylayout/keylayout.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-$(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
-$(call inherit-product-if-exists, vendor/motorola/qinara/qinara-vendor.mk)
+$(call inherit-product, device/pantech/msm8960-common/msm8960.mk)
+$(call inherit-product-if-exists, vendor/pantech/ef44s/ef44s-vendor.mk)
 

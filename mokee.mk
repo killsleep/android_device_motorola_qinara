@@ -1,5 +1,5 @@
-# Inherit device configuration for Motorola Atrix HD.
-$(call inherit-product, device/motorola/qinara/full_qinara.mk)
+# Inherit device configuration for Pantech Vega S5.
+$(call inherit-product, device/pantech/ef44s/full_ef44s.mk)
 
 # Inherit some common MK stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
@@ -10,13 +10,13 @@ $(call inherit-product, vendor/mk/config/gsm.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := mk_qinara
-PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := qinara
-PRODUCT_MODEL := MB886
-PRODUCT_MANUFACTURER := motorola
-PRODUCT_RELEASE_NAME := motorola Atrix HD
-PRODUCT_SFX := cn
+PRODUCT_NAME := mk_ef44s
+PRODUCT_BRAND := pantech
+PRODUCT_DEVICE := ef44s
+PRODUCT_MODEL := IM-A840S
+PRODUCT_MANUFACTURER := pantech
+PRODUCT_RELEASE_NAME := pantech Vega S5
+PRODUCT_SFX := us
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

@@ -1,1 +1,1 @@
-add_lunch_combo mk_qinara-userdebug
+add_lunch_combo mk_ef44s-userdebug

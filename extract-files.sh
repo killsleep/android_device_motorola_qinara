@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-export VENDOR=motorola
-export DEVICE=qinara
+export VENDOR=pantech
+export DEVICE=ef44s
 
 ../msm8960-common/extract-files.sh $@
