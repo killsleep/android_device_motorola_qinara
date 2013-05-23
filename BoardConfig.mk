@@ -18,7 +18,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+TARGET_KERNEL_VARIANT_CONFIG := msm8960_mmi_gsm_defconfig
 
 # copy all kernel modules under the "kerne/modules" directory to system/lib/modules
 PRODUCT_COPY_FILES += $(shell \
