@@ -1,2 +1,2 @@
-Device configuration for the Motorola Atrix HD (dinara/qinara)
+Device configuration for Pantech Vega S5 (IM A840S/ef44s)
 ===============================
